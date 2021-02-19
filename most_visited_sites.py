@@ -1,8 +1,6 @@
 def most_visited_sites():
 	result = {}
 	with open("input.txt", "r") as f:
-		#file_lines = f.readlines()
-		#file_lines = [x.split() for x in file_lines]
 		for line in f:
 			line=line.split()
 			for l in line[1:]:
@@ -16,6 +14,4 @@ def most_visited_sites():
 	else:
 		for x,y in sorted_result[:5]:
 			print(f'{x} {y}')
-
-
 most_visited_sites()
